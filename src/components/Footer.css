@@ -1,6 +1,6 @@
 .footer {
-  background: var(--text);
-  color: white;
+  background: var(--footer-bg);
+  color: var(--footer-text);
   padding: 4rem 2rem 2rem;
 }
 
@@ -91,7 +91,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 1.5rem;
-  color: white;
+  color: var(--footer-text);
 }
 
 .footer-links ul,

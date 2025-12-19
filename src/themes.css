@@ -1,0 +1,191 @@
+/* ========================================
+   THEME 1: PINK ELEGANT (Original)
+   ======================================== */
+[data-theme="pink-elegant"] {
+  --primary: #d4a3a3;
+  --primary-light: #f0d5d5;
+  --primary-dark: #b88888;
+  --primary-rgb: 212, 163, 163;
+
+  --accent: #c9a87c;
+  --accent-light: #e8d5b5;
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #fdf6f6;
+  --bg-tertiary: #fff5f7;
+  --bg-gradient: linear-gradient(135deg, #fdf6f6 0%, #fff5f7 50%, #fef9f3 100%);
+
+  --text-primary: #2c2c2c;
+  --text-secondary: #666666;
+  --text-light: #888888;
+  --text-on-primary: #ffffff;
+
+  --border-color: rgba(212, 163, 163, 0.2);
+  --shadow-color: rgba(212, 163, 163, 0.15);
+
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --nav-text: #2c2c2c;
+
+  --card-bg: #ffffff;
+  --footer-bg: #2c2c2c;
+  --footer-text: #ffffff;
+}
+
+/* ========================================
+   THEME 2: MODERN MINIMAL
+   ======================================== */
+[data-theme="modern-minimal"] {
+  --primary: #000000;
+  --primary-light: #333333;
+  --primary-dark: #000000;
+  --primary-rgb: 0, 0, 0;
+
+  --accent: #ff4757;
+  --accent-light: #ff6b7a;
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-tertiary: #f5f5f5;
+  --bg-gradient: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+
+  --text-primary: #000000;
+  --text-secondary: #444444;
+  --text-light: #888888;
+  --text-on-primary: #ffffff;
+
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+
+  --nav-bg: rgba(255, 255, 255, 0.98);
+  --nav-text: #000000;
+
+  --card-bg: #ffffff;
+  --footer-bg: #000000;
+  --footer-text: #ffffff;
+}
+
+/* ========================================
+   THEME 3: LUXURY DARK
+   ======================================== */
+[data-theme="luxury-dark"] {
+  --primary: #d4af37;
+  --primary-light: #f0d77a;
+  --primary-dark: #b8960c;
+  --primary-rgb: 212, 175, 55;
+
+  --accent: #e8c4c4;
+  --accent-light: #f5e0e0;
+
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1a1a1a;
+  --bg-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-light: #888888;
+  --text-on-primary: #000000;
+
+  --border-color: rgba(212, 175, 55, 0.2);
+  --shadow-color: rgba(212, 175, 55, 0.1);
+
+  --nav-bg: rgba(10, 10, 10, 0.95);
+  --nav-text: #ffffff;
+
+  --card-bg: #141414;
+  --footer-bg: #050505;
+  --footer-text: #ffffff;
+}
+
+/* ========================================
+   THEME 4: JAPANESE ZEN
+   ======================================== */
+[data-theme="japanese-zen"] {
+  --primary: #c1a7a2;
+  --primary-light: #e8dcd9;
+  --primary-dark: #a08580;
+  --primary-rgb: 193, 167, 162;
+
+  --accent: #8fbc8f;
+  --accent-light: #b4d4b4;
+
+  --bg-primary: #faf8f5;
+  --bg-secondary: #f5f0eb;
+  --bg-tertiary: #ebe5de;
+  --bg-gradient: linear-gradient(180deg, #faf8f5 0%, #f5f0eb 50%, #faf8f5 100%);
+
+  --text-primary: #4a4a4a;
+  --text-secondary: #6b6b6b;
+  --text-light: #8a8a8a;
+  --text-on-primary: #ffffff;
+
+  --border-color: rgba(193, 167, 162, 0.3);
+  --shadow-color: rgba(0, 0, 0, 0.05);
+
+  --nav-bg: rgba(250, 248, 245, 0.95);
+  --nav-text: #4a4a4a;
+
+  --card-bg: #ffffff;
+  --footer-bg: #4a4a4a;
+  --footer-text: #faf8f5;
+}
+
+/* ========================================
+   THEME 5: BOLD & VIBRANT
+   ======================================== */
+[data-theme="bold-vibrant"] {
+  --primary: #ff6b9d;
+  --primary-light: #ffa3c4;
+  --primary-dark: #e84a7f;
+  --primary-rgb: 255, 107, 157;
+
+  --accent: #00d9ff;
+  --accent-light: #7aeeff;
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #fff0f5;
+  --bg-tertiary: #ffe4ec;
+  --bg-gradient: linear-gradient(135deg, #fff0f5 0%, #e8f4ff 50%, #fff0f5 100%);
+
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a5a;
+  --text-light: #7a7a8a;
+  --text-on-primary: #ffffff;
+
+  --border-color: rgba(255, 107, 157, 0.2);
+  --shadow-color: rgba(255, 107, 157, 0.2);
+
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --nav-text: #1a1a2e;
+
+  --card-bg: #ffffff;
+  --footer-bg: #1a1a2e;
+  --footer-text: #ffffff;
+}
+
+/* ========================================
+   THEME TRANSITIONS
+   ======================================== */
+:root {
+  --transition-theme: 0.4s ease;
+}
+
+body,
+.navbar,
+.hero,
+.services,
+.gallery,
+.about,
+.contact,
+.footer,
+.service-card,
+.feature-card,
+.info-card,
+.contact-form-wrapper {
+  transition:
+    background var(--transition-theme),
+    background-color var(--transition-theme),
+    color var(--transition-theme),
+    border-color var(--transition-theme),
+    box-shadow var(--transition-theme);
+}

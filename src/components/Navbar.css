@@ -10,9 +10,9 @@
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--nav-bg);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px var(--shadow-color);
   padding: 0.75rem 2rem;
 }
 
@@ -43,7 +43,7 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: var(--text-light);
+  color: var(--text-secondary);
 }
 
 .navbar.scrolled .logo-kirei {
@@ -51,7 +51,7 @@
 }
 
 .navbar.scrolled .logo-nail {
-  color: var(--text);
+  color: var(--text-primary);
 }
 
 .navbar-desktop {
@@ -63,7 +63,7 @@
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-light);
+  color: var(--text-secondary);
   cursor: pointer;
   position: relative;
   padding: 0.5rem 0;
@@ -71,7 +71,7 @@
 }
 
 .navbar.scrolled .nav-link {
-  color: var(--text);
+  color: var(--nav-text);
 }
 
 .nav-link::after {
@@ -97,7 +97,7 @@
 
 .lang-toggle {
   background: var(--primary);
-  color: white;
+  color: var(--text-on-primary);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -117,27 +117,27 @@
   background: none;
   border: none;
   font-size: 1.8rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   cursor: pointer;
 }
 
 .navbar.scrolled .mobile-menu-btn {
-  color: var(--text);
+  color: var(--nav-text);
 }
 
 .mobile-menu {
   display: none;
   flex-direction: column;
   padding: 1rem 2rem;
-  background: white;
+  background: var(--card-bg);
   overflow: hidden;
 }
 
 .mobile-nav-link {
   padding: 1rem 0;
   font-size: 1.1rem;
-  color: var(--text);
-  border-bottom: 1px solid var(--gray-light);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
   cursor: pointer;
   transition: color 0.3s ease;
 }

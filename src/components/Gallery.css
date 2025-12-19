@@ -1,6 +1,6 @@
 .gallery {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #fff 0%, #fdf6f6 100%);
+  background: var(--bg-secondary);
 }
 
 .gallery-container {
@@ -20,7 +20,7 @@
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px var(--shadow-color);
 }
 
 .gallery-placeholder {
@@ -31,6 +31,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  background: var(--card-bg);
 }
 
 .gallery-emoji {
@@ -39,14 +40,14 @@
 
 .gallery-category {
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(212, 163, 163, 0.9);
+  background: rgba(var(--primary-rgb), 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +56,7 @@
 }
 
 .gallery-overlay span {
-  color: white;
+  color: var(--text-on-primary);
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -110,7 +111,7 @@
   position: relative;
   max-width: 600px;
   width: 100%;
-  background: white;
+  background: var(--card-bg);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -122,7 +123,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: white;
+  background: var(--card-bg);
   border: none;
   display: flex;
   align-items: center;
@@ -132,11 +133,12 @@
   z-index: 10;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: var(--text-primary);
 }
 
 .modal-close:hover {
   background: var(--primary);
-  color: white;
+  color: var(--text-on-primary);
 }
 
 .modal-image {
@@ -145,6 +147,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--bg-secondary);
 }
 
 .modal-emoji {
@@ -159,7 +162,7 @@
 .modal-category {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--text-primary);
 }
 
 @media (max-width: 968px) {
