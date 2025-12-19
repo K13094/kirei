@@ -5,6 +5,8 @@ services:
     build: .
     container_name: kirei-nail-bar
     restart: unless-stopped
+    ports:
+      - "3027:80"
     networks:
       - kirei-network
     healthcheck:
