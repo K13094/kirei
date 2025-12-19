@@ -5,10 +5,26 @@ services:
     build: .
     container_name: kirei-nail-bar
     restart: unless-stopped
-    ports:
-      - "3000:80"
+    networks:
+      - kirei-network
     healthcheck:
       test: ["CMD", "wget", "-q", "--spider", "http://localhost:80"]
       interval: 30s
       timeout: 10s
       retries: 3
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: kirei-cloudflared
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    networks:
+      - kirei-network
+    depends_on:
+      - kirei-nail-bar
+
+networks:
+  kirei-network:
+    driver: bridge
