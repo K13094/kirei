@@ -1,0 +1,168 @@
+.gallery-minimal {
+  padding: 10rem 2rem;
+  background: var(--bg-primary);
+}
+
+.minimal-gallery-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.minimal-gallery-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.minimal-gallery-line {
+  width: 1px;
+  height: 60px;
+  background: var(--border-color);
+  margin: 0 auto 2rem;
+}
+
+.minimal-gallery-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.minimal-gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.minimal-filter-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.minimal-filter-btn:hover,
+.minimal-filter-btn.active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.minimal-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.minimal-gallery-item {
+  aspect-ratio: 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.minimal-item-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.minimal-gallery-item:hover .minimal-item-inner {
+  transform: scale(1.1);
+}
+
+.minimal-gallery-footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.minimal-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.minimal-instagram:hover {
+  color: var(--primary);
+}
+
+.minimal-instagram svg {
+  font-size: 1.2rem;
+}
+
+.minimal-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.minimal-modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+}
+
+.minimal-modal-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minimal-modal-image {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-minimal {
+    padding: 6rem 1rem;
+  }
+
+  .minimal-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .minimal-gallery-filters {
+    gap: 0.25rem;
+  }
+
+  .minimal-filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+}

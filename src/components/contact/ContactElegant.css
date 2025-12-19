@@ -1,0 +1,224 @@
+.contact-elegant {
+  padding: 6rem 2rem;
+  background: var(--bg-secondary);
+}
+
+.elegant-contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.elegant-contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.elegant-contact-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.elegant-contact-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+}
+
+.elegant-contact-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.elegant-contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.elegant-form-wrap {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px var(--shadow-color);
+}
+
+.elegant-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.elegant-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.elegant-form input,
+.elegant-form select,
+.elegant-form textarea {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: border-color 0.3s ease;
+}
+
+.elegant-form input:focus,
+.elegant-form select:focus,
+.elegant-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.elegant-form button {
+  padding: 1.2rem 2rem;
+  background: var(--primary);
+  color: var(--text-on-primary);
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.elegant-form button:hover:not(:disabled) {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.elegant-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.elegant-form-success {
+  text-align: center;
+  padding: 3rem;
+}
+
+.elegant-form-success span {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.elegant-form-success p {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.elegant-info-card {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px var(--shadow-color);
+}
+
+.elegant-info-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0 0 2rem;
+}
+
+.elegant-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.elegant-info-item:hover {
+  color: var(--primary);
+}
+
+.elegant-info-item svg {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-top: 0.25rem;
+}
+
+.elegant-info-item.whatsapp svg {
+  color: #25D366;
+}
+
+.elegant-info-item span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.elegant-info-item strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.elegant-info-item em {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-style: normal;
+  margin-top: 0.25rem;
+}
+
+.elegant-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.elegant-social a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.elegant-social a:hover {
+  background: var(--primary);
+  color: var(--text-on-primary);
+}
+
+@media (max-width: 768px) {
+  .contact-elegant {
+    padding: 4rem 1rem;
+  }
+
+  .elegant-contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .elegant-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .elegant-form-wrap,
+  .elegant-info-card {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,210 @@
+.contact-minimal {
+  padding: 10rem 2rem;
+  background: var(--bg-primary);
+}
+
+.minimal-contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.minimal-contact-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.minimal-contact-line {
+  width: 1px;
+  height: 60px;
+  background: var(--border-color);
+  margin: 0 auto 2rem;
+}
+
+.minimal-contact-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+}
+
+.minimal-contact-header p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.minimal-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6rem;
+}
+
+.minimal-contact-block {
+  margin-bottom: 2.5rem;
+}
+
+.minimal-block-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+.minimal-block-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: block;
+  letter-spacing: 1px;
+}
+
+a.minimal-block-value:hover {
+  color: var(--primary);
+}
+
+.minimal-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.minimal-social a {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.minimal-social a:hover {
+  color: var(--primary);
+}
+
+.minimal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.minimal-form-group {
+  position: relative;
+}
+
+.minimal-form-group.full {
+  grid-column: span 2;
+}
+
+.minimal-form-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  pointer-events: none;
+}
+
+.minimal-form-group input,
+.minimal-form-group textarea {
+  width: 100%;
+  padding: 1.5rem 0 0.5rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  background: transparent;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+
+.minimal-form-group select {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  background: transparent;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+
+.minimal-form-group input:focus,
+.minimal-form-group select:focus,
+.minimal-form-group textarea:focus {
+  outline: none;
+  border-bottom-color: var(--primary);
+}
+
+.minimal-form button {
+  grid-column: span 2;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.minimal-form button:hover:not(:disabled) {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.minimal-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.minimal-success {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.minimal-success span {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.minimal-success p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .contact-minimal {
+    padding: 6rem 1.5rem;
+  }
+
+  .minimal-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .minimal-form {
+    grid-template-columns: 1fr;
+  }
+
+  .minimal-form-group.full {
+    grid-column: span 1;
+  }
+
+  .minimal-form button {
+    grid-column: span 1;
+  }
+}

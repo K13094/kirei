@@ -1,0 +1,207 @@
+.about-playful {
+  padding: 6rem 2rem;
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.playful-about-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.playful-about-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.shape-a1 {
+  width: 200px;
+  height: 200px;
+  background: var(--primary);
+  top: 10%;
+  right: 5%;
+  animation: floatAbout 6s ease-in-out infinite;
+}
+
+.shape-a2 {
+  width: 150px;
+  height: 150px;
+  background: var(--accent);
+  bottom: 20%;
+  left: 5%;
+  animation: floatAbout 6s ease-in-out infinite 2s;
+}
+
+.shape-a3 {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-light);
+  top: 50%;
+  left: 50%;
+  animation: floatAbout 6s ease-in-out infinite 4s;
+}
+
+@keyframes floatAbout {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.1); }
+}
+
+.playful-about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.playful-about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.playful-about-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--card-bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  box-shadow: 0 5px 20px var(--shadow-color);
+  margin-bottom: 1.5rem;
+}
+
+.playful-about-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.playful-about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.playful-about-card {
+  background: var(--card-bg);
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px var(--shadow-color);
+}
+
+.playful-about-image {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--primary-light), var(--bg-secondary));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.playful-about-location {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.playful-about-text {
+  padding: 1rem 0;
+}
+
+.playful-text-lead {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.playful-about-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.playful-about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.playful-feature-card {
+  background: var(--card-bg);
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 15px 50px var(--shadow-color);
+  cursor: pointer;
+}
+
+.playful-feature-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.playful-feature-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.playful-feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .playful-about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .playful-about-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-playful {
+    padding: 4rem 1rem;
+  }
+
+  .playful-about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .playful-feature-card {
+    transform: rotate(0) !important;
+  }
+}

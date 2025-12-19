@@ -1,0 +1,142 @@
+.services-elegant {
+  padding: 6rem 2rem;
+  background: var(--bg-primary);
+}
+
+.elegant-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.elegant-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.elegant-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.elegant-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.elegant-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.elegant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.elegant-card {
+  background: var(--card-bg);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.elegant-card:hover {
+  border-color: var(--primary-light);
+}
+
+.elegant-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.elegant-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+}
+
+.elegant-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+  flex-grow: 1;
+}
+
+.elegant-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.elegant-meta svg {
+  color: var(--primary);
+}
+
+.elegant-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 30px;
+}
+
+.elegant-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+  margin: 3rem auto 0;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.elegant-cta:hover {
+  background: var(--primary);
+  color: var(--text-on-primary);
+}
+
+@media (max-width: 768px) {
+  .services-elegant {
+    padding: 4rem 1rem;
+  }
+}

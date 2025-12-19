@@ -1,0 +1,164 @@
+.services-minimal {
+  padding: 10rem 2rem;
+  background: var(--bg-primary);
+}
+
+.minimal-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.minimal-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.minimal-line {
+  width: 1px;
+  height: 60px;
+  background: var(--border-color);
+  margin: 0 auto 2rem;
+}
+
+.minimal-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem;
+}
+
+.minimal-header p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.minimal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 6rem;
+}
+
+.minimal-service {
+  padding: 2rem 0;
+}
+
+.minimal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.minimal-icon {
+  font-size: 2rem;
+}
+
+.minimal-index {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  letter-spacing: 2px;
+}
+
+.minimal-service h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.minimal-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--primary);
+  margin: 1.5rem 0;
+}
+
+.minimal-service p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 300;
+  margin: 0 0 1.5rem;
+}
+
+.minimal-duration {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.minimal-footer {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.minimal-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  padding: 1.5rem 3rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.minimal-phone:hover {
+  border-color: var(--primary);
+  background: var(--bg-secondary);
+}
+
+.minimal-phone svg {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.minimal-phone div {
+  text-align: left;
+}
+
+.minimal-phone span {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.minimal-phone strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .services-minimal {
+    padding: 6rem 1.5rem;
+  }
+
+  .minimal-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .minimal-header {
+    margin-bottom: 4rem;
+  }
+
+  .minimal-footer {
+    margin-top: 4rem;
+  }
+}
